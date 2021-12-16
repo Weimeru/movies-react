@@ -17,13 +17,11 @@ import { LandingPage } from "./pages/LandingPage";
             <Link to="/">
                <h1 className={styles.title}>Movies</h1>
             </Link>
-            <br/>
-            <Link to="/movie">Movie</Link>
         </header>
 
         <main>
             <Routes>
-                <Route exact path="/movie" element={< MovieDetails/>}/>
+                <Route exact path="/movies/:movieId" element={< MovieDetails/>}/>
                 <Route path="/" element={<LandingPage />}/>
             </Routes>
         </main>
